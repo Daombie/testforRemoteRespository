@@ -1,0 +1,82 @@
+# 默认忽略的文件
+/shelf/
+/workspace.xml
+
+#其他忽略的文件
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+.venv
+samples/
+
+# ===== Jupyter =====
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# ===== PyWebView / 前端构建 =====
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== IDE / 编辑器 =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+
+# ===== 数据文件（大文件不要进 Git）=====
+*.csv
+*.xlsx
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+data/raw/
+data/processed/
+models/*.pt
+models/*.pth
+models/*.h5
+
+# ===== 环境配置（含敏感信息）=====
+.env
+.env.local
+config.ini
+secrets.json
